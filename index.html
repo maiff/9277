@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<meta content="maiff,9277,maiff.ren/9277" name="keywords">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>9277</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	</style>
+	<script src="js/webfit.js"></script>
+</head>
+<body onkeydown="search();">
+<div id="content">
+<div id="f-content">
+	<div id="logo-content">
+<img src="img/logo.png" height="99" width="316" id="logo">
+	</div>
+	<div id="function-content">
+<img src="img/kuang.png" height="47" width="450" id="kuang">
+<input type="text" id="text" value="" />
+
+<img src="img/button.png" height="45" width="100" id="button">
+	</div>
+</div>
+</div>
+
+<div id="riji1" class="phone"></div>
+<div id="riji2" class="phone"></div>
+<div id="riji3" class="phone"></div>
+<div id="riji4" class="phone"></div>
+<div id="weilai" class="phone"></div>
+<div id="every-first"><div id="every"></div></div>
+<a id="only" href="index1.0.html">回到那个丑丑的我</a>
+
+</body>
+
+<script type="text/javascript">
+	
+	var button=document.getElementById('button');
+	var text=document.getElementById('text');
+	
+	button.onclick=function(){
+		 window.location.href='https://www.baidu.com/s?wd='+text.value;
+	}
+	function search(ev){
+		var oEvent=ev||event;
+ 	if (oEvent.keyCode==13)  //回车键的键值为13
+   	button.click(); //调用登录按钮的登录事件
+}
+
+</script>
+</html>

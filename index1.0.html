@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	#kuang{
+		width:500px;
+		position: absolute;
+		top: 130px;
+		left: 410px;
+		
+	}
+	#large{
+		width: 200px;
+		position: absolute;
+		top:250px;
+		left: 780px;
+	}
+	#logo{
+ 		position: absolute;
+ 		top: -50px;
+ 		left: 250px;
+
+	}
+	#text{
+		width: 350px;
+		height: 30px;
+		position: absolute;
+		top:295px;
+		left: 480px;
+		border: none;
+		outline: none;
+		font-size: 30px;
+		font-family: '宋体';
+	}
+	#button{
+		width: 60px;
+		height: 60px;
+		z-index: 999;
+		position: absolute;
+		top: 281px;
+		left: 850px;
+		cursor: pointer;
+	}
+	#kuozhan{
+		position: absolute;
+		top: 450px;
+		left: 150px;
+		width:1000px;
+		height: 100px;
+	}
+	</style>
+</head>
+<body onkeydown="search();">
+	<img src="./img1/kuang.png" id="kuang"></img>
+	<img src="./img1/large.png" id="large"></img>
+	<img src="./img1/logo.png" id="logo"></img>
+	
+	<input type="text" id="text"/>
+	<div id="button"></div>
+	
+</body>
+<script type="text/javascript">
+	var button=document.getElementById('button');
+	var text=document.getElementById('text');
+	button.onclick=function(){
+		 window.location.href='https://www.baidu.com/s?wd='+text.value;
+	}
+	function search(){
+ 	if (event.keyCode==13)  //回车键的键值为13
+   	button.click(); //调用登录按钮的登录事件
+}
+</script>
+</html>
